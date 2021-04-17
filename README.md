@@ -1,10 +1,12 @@
 # hangman
 The famous Hangman game on Ruby. Try it, buddy!
 
-To start playing, download this repo to your local machine and run
+To start playing, you have to have `ruby-3.0.0` and `bundle` installed on your machine. 
+
+You can clone this repo onto your local machine, make `cd` in the `hangman` directory and run `bundle` to install required gems. Then, run
 
 ```
-ruby hangman.rb
+bundle exec ruby hangman.rb
 ```
 
 You have to guess the hidden word during 7 attempts. 
