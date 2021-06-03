@@ -21,6 +21,8 @@ You have to guess the hidden word during 7 attempts.
 Enter the letter you want to try and you will get a result on the screen. 
 If the letter was 'correct' (the hidden word include this letter) it will display on the screen in the 'word' string.
 
+![alt text](https://media.giphy.com/media/ZA1SNxndWjZIpXXwmR/giphy.gif)
+
 To add a new hidden words in game you have to open /data/words.txt file and enter a new words in capital letters, every word should be entered in new line.
 
 Enjoy it!

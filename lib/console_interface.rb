@@ -5,9 +5,9 @@ class ConsoleInterface
   # помещённые в массив. Один элемент массива — одна строка с содержимым целого
   # файла.
   FIGURES =
-      Dir["#{__dir__}/../data/figures/*.txt"].
-      sort.
-      map { |file_name| File.read(file_name) }
+    Dir["#{__dir__}/../data/figures/*.txt"]
+      .sort
+      .map { |file_name| File.read(file_name) }
 
   # На вход конструктор класса ConsoleInterface принимает экземпляр класса Game.
   #
@@ -23,7 +23,7 @@ class ConsoleInterface
   def print_out
     puts "Word: #{word_to_show}".colorize(:light_blue)
     puts
-    puts "#{figure}".colorize(:yellow)
+    puts figure.to_s.colorize(:yellow)
     puts "Mistakes made (#{@game.errors_made}): #{errors_to_show}".colorize(:red)
     puts "Mistakes left: #{@game.errors_allowed}".colorize(:green)
 
